@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Slide</title>
+    <style>
+        *{
+            margin-top: 50px;
+            padding: 0%;
+
+        }
+        h1::before{
+            content:"⭐";
+            color:gold;
+        }
+        h1::after{
+            content:"⭐";
+            color:gold;
+        }
+        p::first-letter{font-size: 2em;}
+        .container p{
+            color: blue;
+            font-size: 16px;
+            margin: 10px 0;
+
+        }
+        .container> p{
+            color: darkgreen;
+            font-size: 20px;
+
+        }
+        h1+p{
+            font-weight: bold;
+            background-color: burlywood;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+    <h1>CSS. Selector Demo</h1>
+    <p>This paragraph is adjacent to the h2 and will be bold and brown.</p>
+    <p>This paragraph is a general sibling of h2 and will be italic. </p>
+    <div>
+        <p> 
+        This paragraph is inside a nested div and is effected by the descendent selector, so it is blue. Also a grandchild of c1
+              </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+       .draggable {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <h1>Webpage with tabindex, accesskey, draggable, and contenteditable</h1>
+    <p tabindex="2" draggable="true" class="draggable">
+    </p>
+    <p tabindex="1">
+    </p>
+    <p tabindex="3">
+    </p>
+    <p tabindex="4" contenteditable="true">
+    </p>
+    <p tabindex="5">
+    </p>
+     <p>
+        <a href="https://www.soa.ac.in" target="_blank" accesskey="n">Visit soa.ac.in</a> 
+        (Press Alt + N to access this link).
+    </p>
+</body>
+</html>
